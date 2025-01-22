@@ -50,7 +50,7 @@ class IndexController extends Controller
         $ICINGAWEB_TYPE = $config->get('graph', 'ui');
 
         if ($ICINGAWEB_TYPE == 'icingaweb2') {
-            $ICINGAWEB_HOST_PATH = 'monitoring/host/show?host=';
+            $ICINGAWEB_HOST_PATH = 'icingadb/host?name=';
         } elseif ($ICINGAWEB_TYPE == 'icingadb') {
             $ICINGAWEB_HOST_PATH = 'icingadb/host?name=';  
         }
